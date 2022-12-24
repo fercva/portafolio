@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/portafolio/assets/css/contacto.css">
+    <title>Contacto</title>
+</head>
+<body>
+  <div class="container">
+    <div class="row justify-content-center px-1 py-5">
+        <div class="col-lg-9 ">
+    
+          <div class="contacto-formulario">
+            <div class="text-end">
+              
+            </div>
+            <div class="col-lg">
+              <h1 class="section-title position-relative text-center mb-3">CONTACTO</h1>
+             
+            </div>
+    
+            <div id="success"></div>
+            <form name="sentMessage" id="contactForm" action="https://formsubmit.co/fercva2494@gmail.com" method="POST">
+              <div class="form form-row">
+                <!--Nombre-->
+                <div class="row mb-3 formulario__grupo text-center" id="grupo__nombre">
+                  <label for="nombre" class="col form_label" style="font-weight: 700;color: white;"> Nombre: </label>
+                  <div class="col-md-8 formulario__grupo-input">
+                    <input type="text" class="form-control" name="nombre" style="color: white;" id="nombre" pattern='^[a-zA-ZÀ-ÿ\s]{1,40}$'
+                      title="Ingresa tu nombre" placeholder="Ingrese su nombre" required>
+                    <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+                  </div>
+                  <p class="form__input-error text-center">El nombre solo puede contener letras y espacios</p>
+                </div>
+              </div>
+    
+               <!--email-->
+            <div class="row mb-3 formulario__grupo" id="grupo__email">
+              <label for="email" class="col form_label text-center" style="font-weight: 700;color: white;"> Correo
+                electrónico: </label>
+              <div class="col-md-8 formulario__grupo-input">
+                <input type="email" class="col form-control" name="email" id="email" style="color: white;" title="Debe de contener @" pattern="^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+"
+                  placeholder="Ingrese un correo @" required>
+                  <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+              </div>
+              <p class="form__input-error text-center">El correo debe de contener @</p>
+            </div>
+    
+           <!--Asunto-->
+            <div class="row mb-3 formulario__grupo" id="grupo__asunto">
+              <label for="asunto" class="col-md-4 form_label text-center" style="font-weight: 700; color: white;"> Asunto: </label>
+              <div class="col formulario__grupo-input">
+                <input type="text" class="col-md-8 form-control" name="asunto" id="asunto" title="Agrega un asunto" style="color: white; placeholder="Ingrese un asunto" pattern='^[\s\S]{1,40}$' required>
+                <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+              </div>
+              <p class="form__input-error text-center">Ingrese el asunto</p>
+            </div>
+    
+          <div class="control-groupw mb-3 formulario__grupo" id="grupo__mensaje">
+            <label for="mensaje" class="col-md-4 form_label" style="font-weight:700; color: white;"> Mensaje:</label>
+            <textarea class="form-control p-4" rows="4" id="message" placeholder="Ingrese un mensaje " style="color: white;"
+              title="Por favor, agrega un mensaje de menos de 200 caracteres" pattern='^[\s\S]{1,200}$' required></textarea>
+            <p class="help-block text-danger"></p>
+          </div>
+          <div class="formulario__grupo formulario__grupo-btn-enviar text-center">
+            <button class="btn btn-primary py-3 px-3" type="submit" id="sendMessageButton">Enviar</button>
+            <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+          
+          </div>
+          
+    
+    
+          </form>
+          
+        </div>
+      </div>
+      </div>
+      </div>
+      <img class="foto" src="/portafolio/assets/img/1.png" alt="" loading="lazy" style="display:block;object-fit:cover;">
+      </div></div>
+    <script src="/portafolio/assets/js/contacto.js"></script>
+</body>
+</html>
